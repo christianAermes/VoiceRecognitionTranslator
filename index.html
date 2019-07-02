@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Comptible" content="ie-edge">
+	
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  
+  <script src="languages.js"></script>
+  <script src="app.js"></script>
+  
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  
+  <title>Speech Recognition</title>
+</head>
+<body>
+  <h1>Voice Recognition Translator</h1>
+
+  <div id="controls">
+    <div id="selectors">
+      <div class="dropdown" id="sourceLanguage">
+        <span>From:</span>
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="dropdownSource">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+        </ul>
+      </div>
+
+      <div class="dropdown" id="targetLanguage">
+        <span>To:</span>
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="dropdownTarget">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+        </ul>
+      </div>
+    </div>
+    
+    <button id="startTalking" class="btn btn-primary"><i class="fa fa-microphone" style="font-size: 2.5em"></i></button>
+  
+  </div>
+    
+  
+  
+  <p id="input"></p>
+  <p id="translation"></p>
+  <h5 id="diagnostics"></h5>
+<!--  <button id="repeat" class="btn btn-primary">Repeat</button>-->
+
+</body>
+</html>
